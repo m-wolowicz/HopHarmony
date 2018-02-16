@@ -4,7 +4,7 @@ Trilogy Education Services Full-Stack Web Developer Program
 
 University of Miami Cohort - 201710FSF3
 
-Weeks 18-20 Group Project 1
+Weeks 18-20 Group Project 2 (Data Project)
 
 ## Requirements:
 
@@ -17,7 +17,9 @@ Weeks 18-20 Group Project 1
 * Must have folder structure that meets MVC Paradigm
 * Must meet good quality coding standards (indentation, scoping, naming)
 
+
 ---
+
 
 # Project Title: HopHarmony
 
@@ -40,6 +42,7 @@ The proposed outcome of this project is Traveler Matchup application that allows
 ### Sketch of Final Product:
 
 - TBD
+
 ![Sketch of final Product](https://github.com/m-wolowicz/)
 
 ### Rough Breakdown of Tasks:
@@ -52,7 +55,9 @@ The proposed outcome of this project is Traveler Matchup application that allows
 - [x] Create local friends database
 - [x] Create presentation/documentation.
 
+
 - - -
+
 
 #### Copyright
 
