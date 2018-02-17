@@ -49,13 +49,16 @@ The proposed outcome of this project is Traveler Matchup application that allows
 
 ### Rough Breakdown of Tasks:
 
-- [x] Create HTML 
-- [x] Create CSS layout and syle
-- [x] Create user input form, fields, and submit button
-- [x] Create algorithms that match up user's answers to database
-- [x] Create housing database
-- [x] Create local friends database
-- [x] Create presentation/documentation.
+- [x] Create presentation/documentation.  (@m-wolowicz)
+- [x] Create HTML   (@m-wolowicz)
+- [x] Create CSS layout and syle  (@m-wolowicz)
+- [x] Create user input form, fields, and submit button (@m-wolowicz)
+
+- [x] Create algorithms that match up user's answers to database  (@reyhenry38)
+
+- [x] Create housing database (@dkfrito)
+- [x] Create local friends database (@dkfrito)
+
 
 
 - - -
