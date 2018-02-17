@@ -49,7 +49,7 @@ The proposed outcome of this project is Traveler Matchup application that allows
 
 ### Rough Breakdown of Tasks:
 
-- [x] Create presentation/documentation.  (@m-wolowicz)
+- [x] Create presentation/documentation  (@m-wolowicz)
 - [x] Create HTML   (@m-wolowicz)
 - [x] Create CSS layout and syle  (@m-wolowicz)
 - [x] Create user input form, fields, and submit button (@m-wolowicz)
