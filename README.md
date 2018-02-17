@@ -21,7 +21,9 @@ Weeks 18-20 Group Project 2 (Data Project)
 ---
 
 
-# Project Title: HopHarmony
+# Project Title:
+
+![alt text](https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/HopHarmonyRGB.png "HopHarmony Logo")
 
 ## Team Members:
 
