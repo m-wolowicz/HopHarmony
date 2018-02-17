@@ -1,39 +1,39 @@
 {
-  "name": "hopharmony",
-  "version": "1.0.0",
-  "description": "Traveler Matchup application that allows users to be matched with possible housing accomodations for their trip, as well as matching them up with locals",
-  "main": "server.js",
-  "scripts": {
-    "test": "Test",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/m-wolowicz/HopHarmony.git"
-  },
-  "keywords": [
-    "mysql",
-    "node",
-    "express",
-    "sequelize",
-    "database"
-  ],
-  "author": "David Krane - Ejike Onwe - Melissa Wolowicz",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/m-wolowicz/HopHarmony/issues"
-  },
-  "homepage": "https://github.com/m-wolowicz/HopHarmony#readme",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "express-handlebars": "^3.0.0",
-    "handlebars": "^4.0.11",
-    "method-override": "^2.3.10",
-    "mysql2": "^1.5.2",
-    "sequelize": "^4.33.4"
-  },
-  "devDependencies": {
-    "handlebars-helper-css": "^0.1.0"
-  }
+    "name": "hopharmony",
+    "version": "1.0.0",
+    "description": "Traveler Matchup application that allows users to be matched with possible housing accomodations for their trip, as well as matching them up with locals",
+    "main": "server.js",
+    "scripts": {
+        "test": "Test",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/m-wolowicz/HopHarmony.git"
+    },
+    "keywords": [
+        "mysql",
+        "node",
+        "express",
+        "sequelize",
+        "database"
+    ],
+    "author": "David Krane - Ejike Onwe - Melissa Wolowicz",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/m-wolowicz/HopHarmony/issues"
+    },
+    "homepage": "https://github.com/m-wolowicz/HopHarmony#readme",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "express": "^4.16.2",
+        "express-handlebars": "^3.0.0",
+        "handlebars": "^4.0.11",
+        "method-override": "^2.3.10",
+        "mysql2": "^1.5.2",
+        "sequelize": "^4.33.4"
+    },
+    "devDependencies": {
+        "handlebars-helper-css": "^0.1.0"
+    }
 }
