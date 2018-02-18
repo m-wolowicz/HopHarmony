@@ -43,9 +43,11 @@ The proposed outcome of this project is Traveler Matchup application that allows
 
 ### Sketch of Final Product:
 
-- TBD
+![alt text](https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/projectSketch01.jpg "Wireframe")
 
-![Sketch of final Product](https://github.com/m-wolowicz/)
+![alt text](https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/projectSketch02.jpg "Sketch 01 - Landing Page")
+
+![alt text](https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/projectSketch02.jpg "Sketch 02 - Home Page")
 
 ### Rough Breakdown of Tasks:
 
