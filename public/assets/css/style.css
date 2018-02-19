@@ -1,0 +1,90 @@
+/*Creating our own CSS Style Sheeet for the project*/
+
+/*Styles that apply to the entire page*/
+
+	body {
+		font-family: 'Montserrat', sans-serif;
+		COLOR: #001a27;
+	}
+
+/* BACKGROUND VIDEO + OVERLAY + TEXT */
+	#videoOverlay {
+		background: #ffffff;
+		opacity: 0.75;
+		position: absolute;
+		z-index: -50;
+		text-align: center;
+		margin: 0%;
+		height: 100%;
+		width: 100%;
+	}
+
+	#backgroundVideo {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+		background: url(../img/backgroundImg01.jpg) no-repeat;
+		background-size: cover;
+	}
+
+/* MAIN ROW */
+
+	#mainRow {
+		height: 100vh;
+	}
+
+	/* LOGO COLUMN */
+	#logoColumn {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 300;
+		font-size: 16px;
+
+	}
+
+	#logoColumn hr{
+		background-color: #99928a;
+		height: 5px;
+		border: none;
+		width: 30%;
+		left: -220px;
+		margin: 20px 0;
+	}
+
+	/* FORM COLUMN */
+	#formColumn {
+		background-color: rgba(153, 146, 137, 0.25);
+		padding: 40px;
+		font-size: 14px;
+	}
+
+	#form {
+
+	}
+
+
+/* COLORS:
+Orange:
+R=249 G=157 B=42
+#f99d2a
+---
+Green:
+R=98 G=187 B=70
+#62bb46
+---
+Taupe:
+R=153 G=146 B=138
+#99928a
+---
+Sand:
+#f3e9de
+---
+Dark Blue for text
+#001a27
+*/

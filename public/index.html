@@ -1,1 +1,183 @@
-<--Index File -->
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<!-- Setting the View-port -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap 4 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Linking Our Own CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Linking Google Web Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,900" rel="stylesheet">
+
+	<!-- Linking our own JAVASCRIPT -->
+	<script type="text/javascript"	src="assets/js/script.js"></script>
+
+	<title>HopHarmony | The ultimate getaway match maker</title>
+</head>
+
+<body>
+
+<!-- VIDEO AREA-->
+<!-- This is a black overlay on top of the video to make the video darker -->
+	<div id="videoOverlay"></div> 
+<!-- Video -->
+	<video preload="true" autoplay loop muted poster="assets/img/backgroundImg01.jpg" id="backgroundVideo">
+		<source src="assets/vids/videoOption4.mp4" type="video/mp4">
+	</video>
+
+<div class="container-fluid align-items-center align-middle" id="containerAll">
+	<div class="container align-items-center align-middle" id="containerInside">
+		<!-- Content here -->
+		<div class="row align-items-center align-middle" id="mainRow">
+
+			<!-- This is where the logo & instructions go -->
+			<div class="col-sm-12 col-md-6 col-lg-76" id="logoColumn">
+				<img src="assets/img/HopHarmonyRGB.png" class="img-fluid" alt="Responsive image">
+				<hr>
+				<p>HopHarmony is the ultimate getaway match maker.  Over 5,000,000 bunnies around the world have already used HopHarmony to find available burrows throughout top travel destinations and to meet compatible local friend bunnies to show them around while they are in town. </p>
+			</div>
+
+			<div class="col-sm-12 col-md-1 col-lg-1"></div>
+
+			<!-- This is where the form goes -->
+			<div class="col-sm-12 col-md-5 col-lg-5" id="formColumn">
+				<h1>Where will you burrow next?</h1>
+				<p>Fill out the form to get matched up with other bunnies and burrows around the world.</p>
+				<form id="form">
+
+					<!-- NAME -->
+					<div class="form-group row">
+						<label class="col-4 col-form-label" for="bunnyName">Full Name</label> 
+						<div class="col-8">
+							<input id="bunnyName" name="bunnyName" placeholder="Name Lastname" type="text" required="required" class="form-control here">
+						</div>
+					</div>
+
+					<!-- EMAIL -->
+					<!-- <div class="form-group row">
+						<label for="inputEmail" class="col-4 col-form-label">Email</label> 
+						<div class="col-8">
+							<input id="inputEmail" name="inputEmail" placeholder="email@website.com" type="text" class="form-control here" required="required">
+						</div>
+					</div> -->
+
+					<!-- DESTINATION -->
+					<div class="form-group row">
+						<label for="destination" class="col-4 col-form-label">Destination</label> 
+						<div class="col-8">
+							<input id="destination" name="destination" placeholder="City, State, Country" type="text" class="form-control here" required="required">
+						</div>
+					</div>	
+					
+					<!-- BUDGET -->
+					<div class="form-group row">
+						<label for="numberTravelers" class="col-4 col-form-label">Budget:</label> 
+						<div class="col-8">
+							<select id="numberTravelers" name="numberTravelers" class="custom-select" required="required">
+								<option value="1">I'm a poor bunny, I need a FREE STAY</option>
+								<option selected="selected" value="2">$50 - $100 Per Night</option>
+								<option value="3">$100 - $500 Per Night</option>
+								<option value="4">$500 - $1,000 Per Night</option>
+								<option value="5">$1,000 - $5,000 Per Night</option>
+								<option value="6">$1,000 - $5,000 Per Night</option>
+								<option value="7">I'm a rich bunny, spare no expense!</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- NUMBER OF TRAVELERS -->
+					<div class="form-group row">
+						<label for="numberTravelers" class="col-4 col-form-label">How many travelers?</label> 
+						<div class="col-8">
+							<select id="numberTravelers" name="numberTravelers" class="custom-select" required="required">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10+</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- CHILDREN -->
+					<div class="form-group row">
+						<label class="col-4">Children?</label> 
+						<div class="radio col-8">
+							<label>
+								<input type="radio" name="children" id="childrenYes" value="1" checked> 
+								Yes
+							</label>
+							<label>
+								<input type="radio" name="children" id="childrenNo" value="0"> 
+								No
+							</label>
+						</div>
+					</div>
+
+					<!-- PETS -->
+					<div class="form-group row">
+						<label class="col-4">Pets?</label> 
+						<div class="radio col-8">
+							<label>
+								<input type="radio" name="pets" id="petYes" value="1" checked> 
+								Yes
+							</label>
+							<label>
+								<input type="radio" name="pets" id="petNo" value="0"> 
+								No
+							</label>
+						</div>
+					</div>
+
+					<!-- SMOKER -->
+					<div class="form-group row">
+						<label class="col-4">Any smokers?</label> 
+						<div class="radio col-8">
+							<label>
+								<input type="radio" name="smokers" id="smokeYes" value="1" checked> 
+								Yes
+							</label>
+							<label>
+								<input type="radio" name="smokers" id="smokeNo" value="0"> 
+								No
+							</label>
+						</div>
+					</div>
+
+					<hr>
+
+					<!-- SUBMIT BUTTON -->
+					<div class="form-group row">
+						<div class="offset-4 col-8">
+							<button name="submit" type="submit" class="btn btn-primary">FEED THE BUNNY</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap 4JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
