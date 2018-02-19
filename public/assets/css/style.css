@@ -42,10 +42,8 @@
 
 	/* LOGO COLUMN */
 	#logoColumn {
-		font-family: 'Montserrat', sans-serif;
 		font-weight: 300;
 		font-size: 16px;
-
 	}
 
 	#logoColumn hr{
@@ -63,6 +61,13 @@
 		padding: 40px;
 		font-size: 14px;
 	}
+
+	#formColumn h1 {
+		font-weight: 600;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+
 
 	#form {
 
