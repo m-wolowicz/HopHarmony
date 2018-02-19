@@ -34,6 +34,15 @@
 		background-size: cover;
 	}
 
+/* CONTAINERS */
+	#containerAll {
+		overflow: auto;
+	}
+
+	#containerInside {
+		overflow: auto;
+	}
+
 /* MAIN ROW */
 
 	#mainRow {
@@ -44,6 +53,12 @@
 	#logoColumn {
 		font-weight: 300;
 		font-size: 16px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	#logoColumn p {
+		margin-bottom: 0;
 	}
 
 	#logoColumn hr{
@@ -55,23 +70,79 @@
 		margin: 20px 0;
 	}
 
+		
+	/* EMPTY COLUMN */
+	#emptyColumnDiv {
+		
+	}
+
+
 	/* FORM COLUMN */
 	#formColumn {
 		background-color: rgba(153, 146, 137, 0.25);
 		padding: 40px;
 		font-size: 14px;
+		margin-bottom: 40px;
 	}
 
 	#formColumn h1 {
-		font-weight: 600;
-		font-size: 16px;
+		font-weight: 900;
+		font-size: 40px;
 		text-transform: uppercase;
+		color: #001a27;
 	}
 
-
-	#form {
-
+	#formColumn .row {
+		margin-bottom: 6px;
 	}
+
+	#formColumn input, select, option {
+		font-weight: 300;
+		font-size: 14px;
+	}
+
+	#formColumn button {
+		font-weight: 100;
+		font-size: 20px;
+		letter-spacing: 2px;
+		background-color: #f99d2a;
+		border: none;
+		padding: 10px 40px;
+		padding-right: 60px;
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+
+	#formColumn button img {
+		height: 26px;
+		position: absolute;
+	}
+
+	#formColumn #languages, #activities {
+		height: 50px;
+	}
+
+	#formColumn .radio label {
+		font-weight: 300;
+		font-size: 14px;
+	}
+
+	#formColumn hr {
+		background-color: #62bb46;
+		height: 2px;
+		width: 200px;
+		border: none;
+		margin: 20px auto;
+	}
+
+	#formColumn #customRadios {
+		margin-top: 10px;
+	}
+
+	#formColumn #customRadios label #childrenNo, #petNo, #smokeNo {
+		margin-left: 20px;
+	}
+
 
 
 /* COLORS:
