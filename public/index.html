@@ -41,10 +41,10 @@
 			<div class="col-sm-12 col-md-6 col-lg-76" id="logoColumn">
 				<img src="assets/img/HopHarmonyRGB.png" class="img-fluid" alt="Responsive image">
 				<hr>
-				<p>HopHarmony is the ultimate getaway match maker.  Over 5,000,000 bunnies around the world have already used HopHarmony to find available burrows throughout top travel destinations and to meet compatible local friend bunnies to show them around while they are in town. </p>
+				<p>HopHarmony is the ultimate getaway match maker.  Over 5,000,000 bunnies around the world have already used HopHarmony to find available burrows throughout top travel destinations and to meet compatible local friend bunnies to show them around while they are in town.</p>
 			</div>
 
-			<div class="col-sm-12 col-md-1 col-lg-1"></div>
+			<div class="col-sm-12 col-md-1 col-lg-1" id="emptyColumnDiv"></div>
 
 			<!-- This is where the form goes -->
 			<div class="col-sm-12 col-md-5 col-lg-5" id="formColumn">
@@ -54,9 +54,9 @@
 
 					<!-- NAME -->
 					<div class="form-group row">
-						<label class="col-4 col-form-label" for="bunnyName">Full Name</label> 
+						<label class="col-4 col-form-label" for="bunnyName">Name:</label> 
 						<div class="col-8">
-							<input id="bunnyName" name="bunnyName" placeholder="Name Lastname" type="text" required="required" class="form-control here">
+							<input id="bunnyName" name="bunnyName" placeholder="Name" type="text" required="required" class="form-control here">
 						</div>
 					</div>
 
@@ -68,9 +68,91 @@
 						</div>
 					</div> -->
 
+					<!-- Age -->
+					<div class="form-group row">
+						<label for="age" class="col-4 col-form-label">Age:</label> 
+						<div class="col-8">
+							<select id="age" name="age" class="custom-select" required="required">
+								<option value="1">18 - 25</option>
+								<option value="2">25 - 30</option>
+								<option value="3">30 - 40</option>
+								<option value="4">40 - 50</option>
+								<option value="5">50 - 60</option>
+								<option value="6">60 - 65</option>
+								<option value="7">65+</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- GENDER -->
+					<div class="form-group row">
+						<label for="gender" class="col-4 col-form-label">Gender:</label> 
+						<div class="col-8">
+							<select id="gender" name="gender" class="custom-select" required="required">
+								<option value="1">Male</option>
+								<option value="2">Female</option>
+								<option value="3">Other</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- EDUCATION -->
+					<div class="form-group row">
+						<label for="education" class="col-4 col-form-label">Education:</label> 
+						<div class="col-8">
+							<select id="education" name="education" class="custom-select" required="required">
+								<option value="1">No Formal Education</option>
+								<option value="2">Primary Education</option>
+								<option value="3">Secondary Education / High School</option>
+								<option value="4">GED</option>
+								<option value="5">Some College</option>
+								<option value="6">Associate's Degree</option>
+								<option value="7">Bachelor's Degree</option>
+								<option value="8">Master's Degree</option>
+								<option value="9">Doctorate Or Higher</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- LANGUAGES -->
+					<div class="form-group row">
+						<label for="languages" class="col-4 col-form-label">Languages:</label> 
+						<div class="col-8">
+							<select multiple class="form-control" id="languages">
+								<option value="1">English</option>
+								<option value="2">Spanish</option>
+								<option value="3">Chinese</option>
+								<option value="4">Hindi</option>
+								<option value="5">Arabic</option>
+								<option value="6">Portuguese</option>
+								<option value="7">Bengali</option>
+								<option value="8">Russian</option>
+								<option value="9">Japanese</option>
+								<option value="10">Punjabi/Lahnda</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- ACTIVITIES -->
+					<div class="form-group row">
+						<label for="activities" class="col-4 col-form-label">For Fun:</label> 
+						<div class="col-8">
+							<select multiple class="form-control" id="activities">
+								<option value="1">Outdoor Activies</option>
+								<option value="2">Performing Arts</option>
+								<option value="3">Sporting Events</option>
+								<option value="4">Museums & Galleries</option>
+								<option value="5">Clubs & Bars</option>
+								<option value="6">Hibernating</option>
+							</select>
+						</div>
+					</div>
+
+					<hr>
+
 					<!-- DESTINATION -->
 					<div class="form-group row">
-						<label for="destination" class="col-4 col-form-label">Destination</label> 
+						<label for="destination" class="col-4 col-form-label">Destination:</label> 
 						<div class="col-8">
 							<input id="destination" name="destination" placeholder="City, State, Country" type="text" class="form-control here" required="required">
 						</div>
@@ -94,7 +176,7 @@
 
 					<!-- NUMBER OF TRAVELERS -->
 					<div class="form-group row">
-						<label for="numberTravelers" class="col-4 col-form-label">How many travelers?</label> 
+						<label for="numberTravelers" class="col-4 col-form-label">Travelers:</label> 
 						<div class="col-8">
 							<select id="numberTravelers" name="numberTravelers" class="custom-select" required="required">
 								<option value="1">1</option>
@@ -112,7 +194,7 @@
 					</div>
 
 					<!-- CHILDREN -->
-					<div class="form-group row">
+					<div class="form-group row" id="customRadios">
 						<label class="col-4">Children?</label> 
 						<div class="radio col-8">
 							<label>
@@ -127,7 +209,7 @@
 					</div>
 
 					<!-- PETS -->
-					<div class="form-group row">
+					<div class="form-group row" id="customRadios">
 						<label class="col-4">Pets?</label> 
 						<div class="radio col-8">
 							<label>
@@ -142,8 +224,8 @@
 					</div>
 
 					<!-- SMOKER -->
-					<div class="form-group row">
-						<label class="col-4">Any smokers?</label> 
+					<div class="form-group row" id="customRadios">
+						<label class="col-4">Smokers?</label> 
 						<div class="radio col-8">
 							<label>
 								<input type="radio" name="smokers" id="smokeYes" value="1" checked> 
@@ -156,13 +238,9 @@
 						</div>
 					</div>
 
-					<hr>
-
 					<!-- SUBMIT BUTTON -->
-					<div class="form-group row">
-						<div class="offset-4 col-8">
-							<button name="submit" type="submit" class="btn btn-primary">FEED THE BUNNY</button>
-						</div>
+					<div class="form-group text-center" style="margin-bottom: 0">
+							<button name="submit" type="submit" class="btn btn-primary">FEED THE BUNNY <img src="assets/img/carrot.svg" alt="Feed The Bunny"></button>
 					</div>
 
 				</form>
