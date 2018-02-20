@@ -27,27 +27,6 @@
 
 <body>
 
-<!-- NAVBAR -->
-<!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navigationBar">
-	<div class="container"> 
-		<a class="navbar-brand" id="navBrandLogo" href="/index.html">
-			<img src="/assets/img/HopperBunnyFavicon.png" width="30" height="30" class="d-inline-block align-top" alt="HopHarmony">
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-				</li>
-			</ul>
-			<span class="navbar-text" id="navBarLinks">
-				<a class="nav-link" href="/index.html">Try Again <span class="sr-only">(current)</span></a>
-			</span>
-		</div>
-	</div>
-</nav> -->
-
 <!-- MAIN CONTENT AREA -->
 <main role="main">
 
@@ -63,55 +42,202 @@
 		</div>
 	</div>
 
+	<!-- RESULTS DISPLAYED HERE -->
+	<!-- BURROW RESULTS -->
+	<div class="container-fluid" id="burrowsFluidContainer"> <!-- Fluid Container -->
+		<div class="container" id="burrowsInnerContainer"> <!-- Container -->
+			<h3>Burrows Available</h3>
+			<hr>
 
-	<!-- RESULTS DISPLAYED DOWN HERE -->
-	<div class="container-fluid"> <!-- Fluid Container -->
-		<div class="container" id="burrowsContainer">
-				<h1>Burrows Available</h1>
-		
-				<div class="row" id="burrowResultsRow">
-					<div class="table table-responsive table-striped table-hover">
-						<table class="table" id="tableBurRes">
-							<caption>End of burrows results</caption>
-							<thead class="thead-dark">
-								<tr>
-									<th scope="col">Result #</th>
-									<th scope="col">Details</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- BURROWS RESULTS SHOULD BE POPULATED IN HERE: DISPLAYED DOWN HERE -->
-								<tr>
-									<th scope="row">1</th>
-									<td>
-										<h6>The results should be displayed like this:(ignore/delete this line)</h6><br>
-										<div>
-											<img src="assets/img/burrows/burrow01.jpg" alt="Burrow 1">
-										</div>
-										<div>
-											<p>Burrow Owner:<span class="burOwners" id="burOwner1">Results go here</span></p>
-											<p>Burrow Location:<span class="burLocs" id="burLoc1">Results go here</span></p>
-											<p>Burrow Cost Per Night:<span class="burCosts" id="burCost1">Results go here</span></p>
-											<p>Number of Travelers allowed:<span class="burGuests" id="burGuests1">Results go here</span></p>
-											<p>Kid Friendly:<span class="burKids" id="burKids1">Results go here</span></p>
-											<p>Pet Friendly:<span class="burPets" id="burPets1">Results go here</span></p>
-											<p>Smokers Allowed:<span class="burSmokers" id="burSmoke1">Results go here</span></p>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>
-										<div>
-		
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+			<!-- RESULTS ROW1 -->
+			<div class="row oddRows" id="row01"> 
+				<!-- COLUMN 1-->
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<!-- CARD 01 -->
+					<div class="card">
+						<!-- IMAGE -->
+						<img class="card-img-top borrowImgs" src="assets/img/burrows/burrow01.jpg" alt="Burrow 1">
+						<!-- DETAILS -->
+						<div class="card-body">
+							<!-- TITLE -->
+							<h5 class="card-title">Burrow#: <span class="burIDSpan" id="burID1">123456</span></h5>
+							<p class="card-text">
+								Owner:<span class="burResSpan" id="burOwner1">Results go here</span><br>
+								Location:<span class="burResSpan" id="burLoc1">Results go here</span>
+							</p>
+						</div>
+						<!-- LIST DETAILS -->
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								Cost Per Night:<span class="burResSpan" id="burCost1">Results go here</span><br>
+								Room For:<span class="burResSpan" id="burGuests1">Results go here</span><br>
+								Kid Friendly:<span class="burResSpan" id="burKids1">Results go here</span><br>
+								Pet Friendly:<span class="burResSpan" id="burPets1">Results go here</span><br>
+								Smokers Allowed:<span class="burResSpan" id="burSmoke1">Results go here</span>
+								<div class="text-center">
+									<a href="#" class="btn btn-primary">SELECT</a>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</div>
+				<!-- COLUMN 2-->
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<!-- CARD 02 -->
+					<div class="card">
+						<!-- IMAGE -->
+						<img class="card-img-top borrowImgs" src="assets/img/burrows/burrow02.jpg" alt="Burrow 2">
+						<!-- DETAILS -->
+						<div class="card-body">
+							<!-- TITLE -->
+							<h5 class="card-title">Burrow#: <span class="burIDSpan" id="burID2">789012</span></h5>
+							<p class="card-text">
+								Owner:<span class="burResSpan" id="burOwner2">Results go here</span><br>
+								Location:<span class="burResSpan" id="burLoc2">Results go here</span>
+							</p>
+						</div>
+						<!-- LIST DETAILS -->
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								Cost Per Night:<span class="burResSpan" id="burCost2">Results go here</span><br>
+								Room For:<span class="burResSpan" id="burGuests2">Results go here</span><br>
+								Kid Friendly:<span class="burResSpan" id="burKids2">Results go here</span><br>
+								Pet Friendly:<span class="burResSpan" id="burPets2">Results go here</span><br>
+								Smokers Allowed:<span class="burResSpan" id="burSmoke2">Results go here</span>
+								<div class="text-center">
+									<a href="#" class="btn btn-primary">SELECT</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- COLUMN 3-->
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<!-- CARD 03 -->
+					<div class="card">
+						<!-- IMAGE -->
+						<img class="card-img-top borrowImgs" src="assets/img/burrows/burrow03.jpg" alt="Burrow 3">
+						<!-- DETAILS -->
+						<div class="card-body">
+							<!-- TITLE -->
+							<h5 class="card-title">Burrow#: <span class="burIDSpan" id="burID3">571289</span></h5>
+							<p class="card-text">
+								Owner:<span class="burResSpan" id="burOwner3">Results go here</span><br>
+								Location:<span class="burResSpan" id="burLoc3">Results go here</span>
+							</p>
+						</div>
+						<!-- LIST DETAILS -->
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								Cost Per Night:<span class="burResSpan" id="burCost3">Results go here</span><br>
+								Room For:<span class="burResSpan" id="burGuests3">Results go here</span><br>
+								Kid Friendly:<span class="burResSpan" id="burKids3">Results go here</span><br>
+								Pet Friendly:<span class="burResSpan" id="burPets3">Results go here</span><br>
+								Smokers Allowed:<span class="burResSpan" id="burSmoke3">Results go here</span>
+								<div class="text-center">
+									<a href="#" class="btn btn-primary">SELECT</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- END OF ROW 1 -->
+
+
+			<!-- RESULTS ROW2 -->
+			<div class="row evenRows" id="row02"> 
+				<!-- COLUMN 1-->
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<!-- CARD 04 -->
+					<div class="card">
+						<!-- IMAGE -->
+						<img class="card-img-top borrowImgs" src="assets/img/burrows/burrow04.jpg" alt="Burrow 4">
+						<!-- DETAILS -->
+						<div class="card-body">
+							<!-- TITLE -->
+							<h5 class="card-title">Burrow#: <span class="burIDSpan" id="burID4">235784</span></h5>
+							<p class="card-text">
+								Owner:<span class="burResSpan" id="burOwner4">Results go here</span><br>
+								Location:<span class="burResSpan" id="burLoc4">Results go here</span>
+							</p>
+						</div>
+						<!-- LIST DETAILS -->
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								Cost Per Night:<span class="burResSpan" id="burCost4">Results go here</span><br>
+								Room For:<span class="burResSpan" id="burGuests4">Results go here</span><br>
+								Kid Friendly:<span class="burResSpan" id="burKids4">Results go here</span><br>
+								Pet Friendly:<span class="burResSpan" id="burPets4">Results go here</span><br>
+								Smokers Allowed:<span class="burResSpan" id="burSmoke4">Results go here</span>
+								<div class="text-center">
+									<a href="#" class="btn btn-primary">SELECT</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- COLUMN 2-->
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<!-- CARD 05 -->
+					<div class="card">
+						<!-- IMAGE -->
+						<img class="card-img-top borrowImgs" src="assets/img/burrows/burrow05.jpg" alt="Burrow 5">
+						<!-- DETAILS -->
+						<div class="card-body">
+							<!-- TITLE -->
+							<h5 class="card-title">Burrow#: <span class="burIDSpan" id="burID5">014785</span></h5>
+							<p class="card-text">
+								Owner:<span class="burResSpan" id="burOwner5">Results go here</span><br>
+								Location:<span class="burResSpan" id="burLoc5">Results go here</span>
+							</p>
+						</div>
+						<!-- LIST DETAILS -->
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								Cost Per Night:<span class="burResSpan" id="burCost5">Results go here</span><br>
+								Room For:<span class="burResSpan" id="burGuests5">Results go here</span><br>
+								Kid Friendly:<span class="burResSpan" id="burKids5">Results go here</span><br>
+								Pet Friendly:<span class="burResSpan" id="burPets5">Results go here</span><br>
+								Smokers Allowed:<span class="burResSpan" id="burSmoke5">Results go here</span>
+								<div class="text-center">
+									<a href="#" class="btn btn-primary">SELECT</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- COLUMN 3-->
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<!-- CARD 06 -->
+					<div class="card">
+						<!-- IMAGE -->
+						<img class="card-img-top borrowImgs" src="assets/img/burrows/burrow06.jpg" alt="Burrow 6">
+						<!-- DETAILS -->
+						<div class="card-body">
+							<!-- TITLE -->
+							<h5 class="card-title">Burrow#: <span class="burIDSpan" id="burID6">031548</span></h5>
+							<p class="card-text">
+								Owner:<span class="burResSpan" id="burOwner6">Results go here</span><br>
+								Location:<span class="burResSpan" id="burLoc6">Results go here</span>
+							</p>
+						</div>
+						<!-- LIST DETAILS -->
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								Cost Per Night:<span class="burResSpan" id="burCost6">Results go here</span><br>
+								Room For:<span class="burResSpan" id="burGuests6">Results go here</span><br>
+								Kid Friendly:<span class="burResSpan" id="burKids6">Results go here</span><br>
+								Pet Friendly:<span class="burResSpan" id="burPets6">Results go here</span><br>
+								Smokers Allowed:<span class="burResSpan" id="burSmoke6">Results go here</span>
+								<div class="text-center">
+									<a href="#" class="btn btn-primary">SELECT</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- END OF ROW 2 -->
+		</div> <!-- End Container -->
 	</div> <!-- End of Fluid Container -->
 	
 
