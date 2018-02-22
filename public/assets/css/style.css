@@ -147,8 +147,8 @@
 	#formColumn #customRadios {
 		margin-top: 10px;
 	}
-
-	#formColumn #customRadios label #childrenNo, #petNo, #smokeNo {
+	
+	#childrenNo, #petNo, #smokeNo {
 		margin-left: 20px;
 	}
 
