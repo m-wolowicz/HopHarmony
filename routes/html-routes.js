@@ -3,20 +3,20 @@ var router = express.Router();
 var path = require("path");
 
 /* GET home page. */
-router.get('/', function(req, res) {
-	res.render('index');
-});
+// router.get('/', function(req, res) {
+// 	res.render('index');
+// });
 
 /* GET RESULTS PAGE */
-router.get('/results', function(req, res) {
-	console.log("Feed the Bunny button working");
-	res.sendFile(path.join(__dirname, "../public/results.html"));
-});
+// router.get('/results', function(req, res) {
+// 	console.log("Feed the Bunny button working");
+// 	res.sendFile(path.join(__dirname, "../public/results.html"));
+// });
 
-module.exports = router;
-// module.exports = function (app) {
-// 	app.get('/results', function (req, res) {
-// 		console.log("Feed the Bunny button working");
-// 		res.sendFile(path.join(__dirname, "../public/results.html"));
-// 	});
-// }
+// module.exports = router;
+module.exports = function (app) {
+	app.get('/results', function (req, res) {
+		console.log("Feed the Bunny button working");
+		res.sendFile(path.join(__dirname, "../public/results.html"));
+	});
+}

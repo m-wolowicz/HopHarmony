@@ -1,8 +1,8 @@
-var bunnies = require("./data/match.js");
+var bunnies = require("../data/match.js");
 
 module.exports = function (app) {
 
-    app.get("/api/friends", function(req, res) {
+    app.get("/api/bunnies", function(req, res) {
         res.json(bunnies);
     });
 }
