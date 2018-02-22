@@ -115,6 +115,7 @@
 		letter-spacing: 2px;
 		background-color: #f99d2a;
 		border: none;
+		border-radius: 0;
 		padding: 10px 30px;
 		padding-right: 50px;
 		margin-top: 15px;

@@ -19,7 +19,7 @@
 	}
 
 	#hopLogo {
-		max-width: 45%; !important
+		max-width: 45% !important;
 	}
 
 	#jumboContainer hr{
@@ -37,6 +37,7 @@
 		letter-spacing: 2px;
 		background-color: #f99d2a;
 		border: none;
+		border-radius: 0;
 		padding: 8px 20px;
 		padding-right: 35px;
 		margin-top: 10px;
@@ -52,7 +53,7 @@
 	#burrowsFluidContainer {
 		background-color: #001a27;
 		padding-top: 80px;
-		padding-bottom: 50px;
+		padding-bottom: 80px;
 	}
 
 	#burrowsInnerContainer h3 {
@@ -73,10 +74,143 @@
 	}
 	
 	#burrowsInnerContainer .card {
-		margin-bottom: 25px;
+		margin-bottom: 40px;
+		border: none;
+		border-radius: 0px;
+		font-size: 14px;	
 	}
 
+	#burrowsInnerContainer .card .card-img-top {
+		border: none;
+		border-radius: 0px;
+		height: 200px;
+		object-fit: cover;
+	}
 	
+	#burrowsInnerContainer h5 {
+		font-size: 18px;
+		background-color: #62bb46;
+		color: white;
+		margin-left: -1.25rem;
+		margin-right: -1.25rem;
+		margin-top: -1.25rem;
+		margin-bottom: 1rem;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border: none;	
+	}
+
+	#burrowsInnerContainer .card .burResSpan {
+		margin-left: 5px;
+		font-weight: 100;
+		color: #99928a;
+	}
+
+	.selectBtns {
+		font-weight: 100;
+		font-size: 13px;
+		letter-spacing: 2px;
+		background-color: #62bb46;
+		border: none;
+		border-radius: 0;
+		padding: 8px 30px;
+		margin-top: 0.75rem;
+		margin-bottom: 10px;
+	}
+
+
+
+	/* BUNNIES RESULTS */
+	#bunniesFluidContainer {
+		background-color: #f3e9de;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	#bunniesInnerContainer h3 {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 50px;
+		font-weight: 300;
+		letter-spacing: 4px;
+		color: #001a27;
+		margin-bottom: 40px;
+	}
+
+	#bunniesInnerContainer hr {
+		background-color: #f99d2a;
+		align-self: center;
+		max-width: 20%;
+		margin-bottom: 50px;
+	}
+
+	.bunCards {
+		margin-bottom: 60px;
+		border: none;
+		font-size: 14px;
+		background: white;
+	}
+
+	.bunHeaders {
+		background-color: #f3e9de;
+		height: 120px;
+		text-align: center;
+		padding: 0;
+		border-bottom: 5px solid #f99d2a;
+	}
+
+	.bunHeaders img {
+		border-radius: 50%;
+		border: 5px solid #f99d2a;
+		max-width: 160px;
+		max-height: 160px;
+	}
+
+	.BunBodies {
+		background: none;
+		padding: 1.25rem;
+		padding-top: 4rem;
+	}
+
+	.BunTitles {
+		text-align: center;
+		color: #f99d2a;
+		font-weight: 300;
+		margin-bottom: 36px;
+	}
+	
+	.BunText {
+		font-size: 14px;
+		margin-bottom: 0px;
+	}
+
+	.bunResSpan {
+		margin-left: 5px;
+		font-weight: 100;
+		color: #99928a;
+	}
+
+	.bunResSpan2 {
+		font-weight: 100;
+		color: #99928a;
+	}
+
+	.selectBunBtns {
+		font-weight: 100;
+		font-size: 13px;
+		letter-spacing: 2px;
+		background-color: #f99d2a;
+		border: none;
+		border-radius: 0;
+		padding: 8px 30px;
+		margin-top: 1rem;
+		margin-bottom: 10px;
+	}
+		
+
+
 
 
 /* COLORS:
