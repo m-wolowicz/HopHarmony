@@ -19,8 +19,8 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 // Requiring our routes and give the server access to them.
-// require("./routes/html-routes.js")(app);
-// require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
+require("./routes/api-routes.js")(app);
 
 var routes = require("./routes/html-routes.js");
 
@@ -37,4 +37,4 @@ app.set("view engine", "handlebars");
 app.listen(PORT, function() {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
 });
-// });ww
+// });
