@@ -255,122 +255,128 @@
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATvtCAnstqHXRDXc26_63lHuHBmZKwXyg&libraries=places"></script>
 
 <script> //This script is for the google API autocomplete form
-jQuery(document).ready(function () {
+	jQuery(document).ready(function () {
 
-	var placeSearch, autocomplete;
+		var placeSearch, autocomplete;
 
-	function initialize() {
-		// Create the autocomplete object, restricting the search
-		// to geographical location types.
-		autocomplete = new google.maps.places.Autocomplete(
-		/** @type {HTMLInputElement} */
-		(document.getElementById('autocomplete')), {
-			types: ['geocode']
-		});
-
-		google.maps.event.addDomListener(document.getElementById('autocomplete'), 'focus', geolocate);
-	}
-
-	function geolocate() {
-
-		if (navigator.geolocation) {
-			navigator.geolocation.getCurrentPosition(function (position) {
-
-				var geolocation = new google.maps.LatLng(
-				position.coords.latitude, position.coords.longitude);
-				var circle = new google.maps.Circle({
-					center: geolocation,
-					radius: position.coords.accuracy
+		function initialize() {
+			// Create the autocomplete object, restricting the search
+			// to geographical location types.
+			autocomplete = new google.maps.places.Autocomplete(
+				/** @type {HTMLInputElement} */
+				(document.getElementById('autocomplete')), {
+					types: ['geocode']
 				});
-				autocomplete.setBounds(circle.getBounds());
 
-				// Log autocomplete bounds here
-				console.log(autocomplete.getBounds());
-			});
+			google.maps.event.addDomListener(document.getElementById('autocomplete'), 'focus', geolocate);
 		}
-	}
 
-	initialize();
+		function geolocate() {
 
-});
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(function (position) {
+
+					var geolocation = new google.maps.LatLng(
+						position.coords.latitude, position.coords.longitude);
+					var circle = new google.maps.Circle({
+						center: geolocation,
+						radius: position.coords.accuracy
+					});
+					autocomplete.setBounds(circle.getBounds());
+
+					// Log autocomplete bounds here
+					console.log(autocomplete.getBounds());
+				});
+			}
+		}
+
+		initialize();
+
+	});
+
+
+
+
 
 // Global Variable Declaration (scoping fix)
-var allFieldsCompleted;
+// var allFieldsCompleted;
 $(document).ready(function () {
 	// Event Listener for Submission
 	$('#submitButton').on('click', function () {
 
 		// Check if all the user fields are completed
-		checkIfComplete(function () {
-			// Proceed with AJAX call if all questions are answered
-			if (allFieldsCompleted) {
-				collectInputs();
-			}
-			else {
-				alert('Please complete all fields before submitting!');
-			}
-		}); // end checkIfComplete() callback
+		// checkIfComplete(function () {
+		// 	// Proceed with AJAX call if all questions are answered
+		// 	if (allFieldsCompleted) {
+		// 		collectInputs();
+		// 	}
+		// 	else {
+		// 		alert('Please complete all fields before submitting!');
+		// 	}
+		// }); // end checkIfComplete() callback
 	}); // end submit listener
 }); // document ready
 // Function to valid user input
-function checkIfComplete(callback) {
-	// Check through all the questions (i.e. iterate through all of class "chosen-select")
-	var questionsCompleted;
-	$('.chosen-select').each(function () {
-		if ($(this).val() == "") {
-			questionsCompleted = false;
-		}
-	})
-		// This counters the async behavior of $.each()
-		.promise().done(function () {
-			// Check if any questions are incomplete
-			if (questionsCompleted == false) {
-				allFieldsCompleted = false;
-			}
-			// Determine if Name is entered
-			else if ($('#formName').val().trim() == "") {
-				allFieldsCompleted = false;
-			}
-			// Determine if Link is entered
-			else if ($('#formImage').val().trim() == "") {
-				allFieldsCompleted = false;
-			}
-			// Otherwise, the all fields are completed
-			else {
-				allFieldsCompleted = true;
-			}
-			// Fire Off Callback (to counter async behavior of $.each)
-			callback();
-		});
-}
-function collectInputs() {
-	// Make new friend object
-	var newFriend = {
-		name: $('#formName').val().trim(),
-		photo: $('#formImage').val().trim(),
-		scores: []
-	};
-	// Loop through Questions to get scores
-	var scoresArray = [];
-	$('.chosen-select').each(function () {
-		scoresArray.push(parseInt($(this).val())); // Parse Input Value as integer
-	})
-		// This counters the async behavior of $.each()
-		.promise().done(function () {
+// function checkIfComplete(callback) {
+// 	// Check through all the questions (i.e. iterate through all of class "custom-select")
+// 	var questionsCompleted;
+// 	$('.custom-select').each(function () {
+// 		if ($(this).val() == "") {
+// 			questionsCompleted = false;
+// 		}
+// 	})
+// 		// This counters the async behavior of $.each()
+// 		.promise().done(function () {
+// 			// Check if any questions are incomplete
+// 			if (questionsCompleted == false) {
+// 				allFieldsCompleted = false;
+// 			}
+// 			// Determine if Name is entered
+// 			else if ($('#formName').val().trim() == "") {
+// 				allFieldsCompleted = false;
+// 			}
+// 			// Determine if Link is entered
+// 			else if ($('#formImage').val().trim() == "") {
+// 				allFieldsCompleted = false;
+// 			}
+// 			// Otherwise, the all fields are completed
+// 			else {
+// 				allFieldsCompleted = true;
+// 			}
+// 			// Fire Off Callback (to counter async behavior of $.each)
+// 			callback();
+// 		});
+// }
+// function collectInputs() {
+// 	// Make new friend object
+// 	var newFriend = {
+// 		name: $('#formName').val().trim(),
+// 		photo: $('#formImage').val().trim(),
+// 		scores: []
+// 	};
+// 	// Loop through Questions to get scores
+// 	var scoresArray = [];
+// 	$('.custom-select').each(function () {
+// 		scoresArray.push(parseInt($(this).val())); // Parse Input Value as integer
+// 	})
+// 		// This counters the async behavior of $.each()
+// 		.promise().done(function () {
 
-			// Push the array of scores to the new friend object
-			newFriend.scores = scoresArray;
-			// POST the newFriend to the friends.js file and get back the best match
-			var currentURL = window.location.origin;
-			$.post(currentURL + "/api/friends", newFriend, function (data) {
-				// Add Best Match attributes to Modal
-				$('#matchName').text(data.name);
-				$('#matchImg').attr('src', data.photo);
-				// Show the modal with the best match 
-				$("#resultsModal").modal('toggle');
-			}); // end AJAX POST
-		});
-}
+// 			// Push the array of scores to the new friend object
+// 			newFriend.scores = scoresArray;
+// 			// POST the newFriend to the friends.js file and get back the best match
+// 			var currentURL = window.location.origin;
+// 			$.post(currentURL + "/api/friends", newFriend, function (data) {
+// 				// Add Best Match attributes to Modal
+// 				$('#matchName').text(data.name);
+// 				$('#matchImg').attr('src', data.photo);
+// 				// Show the modal with the best match 
+// 				$("#resultsModal").modal('toggle');
+// 			}); // end AJAX POST
+// 		});
+// }
+
+
 
 </script>
 

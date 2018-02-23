@@ -10,10 +10,13 @@ var PORT = process.env.PORT || 9000;
 var app = express();
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // parse application/json
 app.use(bodyParser.json());
+// Sets up the Express app to handle data parsing
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
@@ -25,6 +28,9 @@ require("./routes/api-routes.js")(app);
 var routes = require("./routes/html-routes.js");
 
 app.use(routes);
+// Server Routing Map 
+// apiRoutes(app); // API route - Must be listed first due to the HTML default catch all "use" route
+// htmlRoutes(app); // HTML route 
 
 // Set Handlebars.
 var exphbs = require("express-handlebars");
@@ -38,3 +44,5 @@ app.listen(PORT, function() {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
 });
 // });
+
+
