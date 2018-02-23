@@ -1,0 +1,180 @@
+<!-- VIDEO AREA-->
+<!-- This is a black overlay on top of the video to make the video darker -->
+	<div id="videoOverlay"></div> 
+<!-- Video -->
+	<video preload="true" autoplay loop muted poster="assets/img/backgroundImg01.jpg" id="backgroundVideo">
+		<source src="assets/vids/videoOption4LowRes.mp4" type="video/mp4">
+	</video>
+
+<div class="container-fluid align-items-center align-middle" id="containerAll">
+	<div class="container align-items-center align-middle" id="containerInside">
+		<!-- Content here -->
+		<div class="row align-items-center align-middle" id="mainRow">
+
+			<!-- This is where the logo & instructions go -->
+			<div class="col-sm-12 col-md-6 col-lg-6" id="logoColumn">
+				<img src="assets/img/HopHarmonyAnimated.svg" class="img-fluid" alt="Responsive image">
+				<hr>
+				<p>Join over 5,000,000+ bunnies around the world, who have already signed up with HopHarmony to meet travelers visiting their local areas and offer to show them around, and hang out while they are in town.</p>
+			</div>
+
+			<div class="col-sm-12 col-md-1 col-lg-1" id="emptyColumnDiv"></div>
+
+			<!-- This is where the form goes -->
+			<div class="col-sm-12 col-md-5 col-lg-5" id="formColumn">
+				<h1>Become A Bunny</h1>
+				<p>Fill out the form to get become a part of HopHarmony's available bunnies.</p>
+				<form class="bunnyForm" id="form">
+
+					<!-- NAME -->
+					<div class="form-group row">
+						<label class="col-4 col-form-label" for="bunnyName">Name:</label> 
+						<div class="col-8">
+							<input id="bunnyName" name="bunnyName" placeholder="Name" type="text" required="required" class="form-control here" autocomplete="name">
+						</div>
+					</div>
+
+					<!-- LOCATION -->
+					<div class="form-group row">
+						<label for="destination" class="col-4 col-form-label">Location:</label> 
+						<!-- DO NOT CHANGE IDs HERE, THEY ARE SET UP FOR GOOGLE API AUTOCOMPLETE -->
+						<div class="col-8" id="locationField">
+							<input id="autocomplete" name="destination" placeholder="City, State, Country" type="text" class="form-control here" required="required">
+						</div>
+					</div>	
+
+					<!-- Age -->
+					<div class="form-group row">
+						<label for="age" class="col-4 col-form-label">Age:</label> 
+						<div class="col-8">
+							<select id="age" name="age" class="custom-select" required="required">
+								<option value="18 - 25">18 - 25</option>
+								<option value="25 - 30">25 - 30</option>
+								<option value="30 - 40">30 - 40</option>
+								<option value="40 - 50">40 - 50</option>
+								<option value="50 - 60">50 - 60</option>
+								<option value="60 - 65">60 - 65</option>
+								<option value="65+">65+</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- GENDER -->
+					<div class="form-group row">
+						<label for="gender" class="col-4 col-form-label">Gender:</label> 
+						<div class="col-8">
+							<select id="gender" name="gender" class="custom-select" required="required">
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- PRIMARY LANGUAGE -->
+					<div class="form-group row">
+						<label for="primaryLanguage" class="col-4 col-form-label">Language 1:</label> 
+						<div class="col-8">
+							<select id="primaryLanguage" name="primaryLanguage" class="custom-select" required="required">
+								<option value="English">English</option>
+								<option value="Spanish">Spanish</option>
+								<option value="Chinese">Chinese</option>
+								<option value="Hindi">Hindi</option>
+								<option value="Arabic">Arabic</option>
+								<option value="Portuguese">Portuguese</option>
+								<option value="Bengali">Bengali</option>
+								<option value="Russian">Russian</option>
+								<option value="Japanese">Japanese</option>
+								<option value="Punjabi/Lahnda">Punjabi/Lahnda</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- SECONDARY LANGUAGE -->
+					<div class="form-group row">
+						<label for="secondaryLanguage" class="col-4 col-form-label">Language 2:</label> 
+						<div class="col-8">
+							<select id="secondaryLanguage" name="secondaryLanguage" class="custom-select" required="required">
+								<option value="English">English</option>
+								<option value="Spanish">Spanish</option>
+								<option value="Chinese">Chinese</option>
+								<option value="Hindi">Hindi</option>
+								<option value="Arabic">Arabic</option>
+								<option value="Portuguese">Portuguese</option>
+								<option value="Bengali">Bengali</option>
+								<option value="Russian">Russian</option>
+								<option value="Japanese">Japanese</option>
+								<option value="Punjabi/Lahnda">Punjabi/Lahnda</option>
+							</select>
+						</div>
+					</div>
+
+
+					<!-- ACTIVITIES -->
+					<div class="form-group row">
+						<label for="activities" class="col-4 col-form-label">For Fun:</label> 
+						<div class="col-8">
+							<select id="activities" name="activities" class="custom-select" required="required">
+								<option value="Outdoor Activies">Outdoor Activies</option>
+								<option value="Performing Arts">Performing Arts</option>
+								<option value="Sporting Events">Sporting Events</option>
+								<option value="Museums & Galleries">Museums & Galleries</option>
+								<option value="Clubs & Bars">Clubs & Bars</option>
+								<option value="Hibernating">Hibernating</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- SUBMIT BUTTON -->
+					<div class="form-group text-center" style="margin-bottom: 0">
+							<button name="submit" type="submit" id="submitButton" class="btn btn-primary">FEED THE BUNNY <img src="assets/img/carrot.svg" alt="Feed The Bunny"></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- GOOGLE API FOR PLACE FORM AUTOCOMPLETE -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- Google API key MW AIzaSyATvtCAnstqHXRDXc26_63lHuHBmZKwXyg -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATvtCAnstqHXRDXc26_63lHuHBmZKwXyg&libraries=places"></script>
+
+<script> //This script is for the google API autocomplete form
+jQuery(document).ready(function () {
+
+	var placeSearch, autocomplete;
+
+	function initialize() {
+		// Create the autocomplete object, restricting the search
+		// to geographical location types.
+		autocomplete = new google.maps.places.Autocomplete(
+		/** @type {HTMLInputElement} */
+		(document.getElementById('autocomplete')), {
+			types: ['geocode']
+		});
+
+		google.maps.event.addDomListener(document.getElementById('autocomplete'), 'focus', geolocate);
+	}
+
+	function geolocate() {
+
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(function (position) {
+
+				var geolocation = new google.maps.LatLng(
+				position.coords.latitude, position.coords.longitude);
+				var circle = new google.maps.Circle({
+					center: geolocation,
+					radius: position.coords.accuracy
+				});
+				autocomplete.setBounds(circle.getBounds());
+
+				// Log autocomplete bounds here
+				console.log(autocomplete.getBounds());
+			});
+		}
+	}
+	initialize();
+});
+</script>
