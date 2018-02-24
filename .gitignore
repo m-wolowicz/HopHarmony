@@ -7,6 +7,12 @@ keys.json
 # Icon must end with two \r
 Icon
 
+#Visual Studio Code files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # Thumbnails
 ._*
