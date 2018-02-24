@@ -43,7 +43,7 @@ app.use("/", routes);
 app.use("/create", routes);
 
 
-// listen on port 9000
+// listen on port 8080
 var PORT = process.env.PORT || 8080;
 
 	// Syncing our database and logging a message to the user upon success
