@@ -13,8 +13,8 @@
 		// //This listens for when the FEED THE BUNNY button is clicked
 		$(".bunnyForm").on("submit", function(event) {
 
-			//This prevents te page from reloading
-				event.preventDefault();
+			//This prevents the page from reloading
+				// event.preventDefault();
 
 			//Logging for Debugging and Testing
 				console.log("\nThe FEED THE BUNNY BUTTON was clicked\n");
