@@ -11,17 +11,10 @@ var db = require("./models");
 var app = express();
 
 	/* We're setting up our express server to handle two types of requests
-<<<<<<< HEAD
 	URL Encoded: this is the standard request created when you fill out a form
 	parameters are in the URL sample Name=John+Smith&Age=23
 	extended: he "extended" syntax allows for rich
 	objects and arrays to be encoded into the urlencoded format,
-=======
-	URL Encoded: this is the standard request created when you fill out a form 
-	parameters are in the URL sample Name=John+Smith&Age=23
-	extended: he "extended" syntax allows for rich 
-	objects and arrays to be encoded into the urlencoded format, 
->>>>>>> 58e7b4432c275de7d91a56f363f2d6cff34cf48e
 	https://stackoverflow.com/questions/6323338/jquery-ajax-posting-json-to-webservice
 	JSONL { Name : 'John Smith', Age: 23}
 	*/
@@ -50,11 +43,7 @@ app.use("/", routes);
 app.use("/create", routes);
 
 
-<<<<<<< HEAD
 // listen on port 9000
-=======
-// listen on port 8080
->>>>>>> 58e7b4432c275de7d91a56f363f2d6cff34cf48e
 var PORT = process.env.PORT || 8080;
 
 	// Syncing our database and logging a message to the user upon success
