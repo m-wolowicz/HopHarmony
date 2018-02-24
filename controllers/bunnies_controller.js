@@ -27,12 +27,12 @@ router.post("/results/new", function (req, res) {
   console.log('/results/new RUNNING')
   db.Bunny.create({
     bunnyName: req.body.bunnyName,
-    destination: req.body.destination,
     age: req.body.age,
-    gender: req.body.gender, 
+    gender: req.body.gender,
     primaryLanguage: req.body.primaryLanguage, 
-    secondaryLanguage: req.body.secondaryLanguage, 
-    activities: req.body.activities
+    secondaryLanguage: req.body.secondaryLanguage,
+    activities: req.body.activities,
+    destination: req.body.destination,
   })
 // Passing the whole object/results an
     .then(function (bunniesDb) {
