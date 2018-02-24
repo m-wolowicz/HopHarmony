@@ -24,7 +24,10 @@
 			<div class="col-sm-12 col-md-5 col-lg-5" id="formColumn">
 				<h1>Become A Bunny</h1>
 				<p>Fill out the form to get become a part of HopHarmony's available bunnies.</p>
-				<form class="bunnyForm" id="form">
+
+				{{!-- We use the action to send the data on the form to controller --}}
+				<form class="bunnyForm" id="form" method="POST" action="/results/new"> 
+					
 
 					<!-- NAME -->
 					<div class="form-group row">
@@ -127,7 +130,7 @@
 
 					<!-- SUBMIT BUTTON -->
 					<div class="form-group text-center" style="margin-bottom: 0">
-							<button name="submit" type="submit" id="submitButton" class="btn btn-primary">FEED THE BUNNY <img src="assets/img/carrot.svg" alt="Feed The Bunny"></button>
+						<button name="submit" type="submit" id="submitButton" class="btn btn-primary">FEED THE BUNNY <img src="assets/img/carrot.svg" alt="Feed The Bunny"></button>
 					</div>
 				</form>
 			</div>
