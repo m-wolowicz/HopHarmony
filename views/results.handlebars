@@ -20,24 +20,12 @@
 			<hr>
 
 			<!-- RESULTS ROW1 -->
-			<div class="row bunOddRows" id="rowBun01"> 
-				
-
+			<div class="row bunOddRows" id="rowBun01">
 				{{!-- THIS IS WHERE YOU HAVE TO FIGURE OUT HOW TO ADD EACH RESULT --}}
-				
-					
-					 {{#each bunny}}
-					
-						<pre>{{this.id}}. {{this.name}}
-										</pre>
-						<!-- {{this.Date}} -->
-					{{/each}}
-					
-
-
+				{{#each bunnies}}
+					{{!-- {{> bunnies/bunnies}} --}}
+				{{/each}}
 			</div> <!-- END OF ROW 1 -->
-
 		</div> <!-- End Container -->
 	</div> <!-- End of Fluid Container -->
-
 </main>
