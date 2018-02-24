@@ -39,7 +39,7 @@ The proposed outcome of this project is Traveler Matchup application that allows
 
 ### Technologies/Languages used:
 
-- TBD
+- HTML, CSS, Favicon, Bootstrap 4, Bootstrap4's New Features: CARDS, Google Web Fonts, Javascript, jQuery, Popper.js, Animated SVG, Google Places API Autocomplete - Geolocate, JSON, Package.JSON, Node.js, Express, Body-Parser, Express-Handlebars, MySQL Database, Sequelize ORM, Nodemon, MVC Paradigm folder structure, GET and POST routes.
 
 ### Sketch of Final Product:
 
