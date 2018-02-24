@@ -42,24 +42,18 @@ router.post("/results/new", function (req, res) {
     
 });// End of post
 
-   // Display results on the Result page
-// router.put("/bunnies/update/:id", function (req, res) {
-//   // update one of the bunnies
-//   db.Bunny.update({
-//     // devoured: true
-//   },
-//     {
-//       where: {
-//         id: req.params.id
-//       }
-//     }
-//   ).then(function (bunniesDb) {
-//     res.json("/results");
-//   });
-
    // Results page
 router.get("/results", function(req, res) {
-  res.render("results");
+  db.Bunny.findAll()
+  .then(function (bunnies) {
+    console.log("Coming from the bunnies controller.js file get results: " + bunnies);
+    var bunniesObject = {
+      bunniesAll: bunnies
+    };
+    return res.render("results", bunniesObject);
+
+  });
+
 });
 
 
