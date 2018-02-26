@@ -5,13 +5,12 @@
 		<!-- COLOR HEADER -->
 		<div class="card-header bunHeaders">
 			<!-- IMAGE -->
-			<img class="card-img-top bunnyImgs" src=" " alt="Bunny 1">{{this.bunnyPhoto}}
-			 {{!-- src="assets/img/HopperBunny.png" --}}
+			<img class="card-img-top bunnyImgs" src="assets/img/bunnies/{{this.bunnyPhoto}}" alt="Bunny 1">
 		</div>      
 		<!-- DETAILS -->
 		<div class="card-body BunBodies">
 			<!-- TITLE -->
-			<h5 class="card-title BunTitles">Bunny: <span class="bunIDSpan" id="bunID{{this.id}}">{{this.bunnyName}}</span></h5>
+			<h5 class="card-title BunTitles"><span class="bunIDSpan" id="bunID{{this.id}}">{{this.bunnyName}}</span></h5>
 			<p class="card-text BunText">
 				Location:<span class="bunResSpan" id="bunLoc1">{{this.destination}}</span><br>
 				Age:<span class="bunResSpan" id="bunAge1">{{this.age}}</span><br>
@@ -21,8 +20,7 @@
 				Fun:<span class="bunResSpan" id="bunFun1">{{this.activities}}</span>
 			</p>
 			<div class="text-center">
-				{{!-- <button class="btn btn-primary selectBunBtns">CONTACT</button> --}}
-				<a href="#" class="btn btn-primary selectBunBtns">CONTACT</a>
+				{{!-- <a href="#" class="btn btn-primary selectBunBtns">CONTACT</a> --}}
 			</div>
 		</div>	
 	</div>

@@ -26,9 +26,6 @@ jQuery(document).ready(function () {
                     radius: position.coords.accuracy
                 });
                 autocomplete.setBounds(circle.getBounds());
-
-                // Log autocomplete bounds here
-                console.log(autocomplete.getBounds());
             });
         }
     }

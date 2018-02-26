@@ -24,19 +24,18 @@ router.get("/index", function(req, res) {
 
    // Post route, edited to match sequelize (Here we are grabbing the inputs from the foorm on index.handlebars )
 router.post("/results/new", function (req, res) {
-  console.log('/results/new RUNNING')
   db.Bunny.create({
     bunnyName: req.body.bunnyName,
-    age: req.body.age,
+	destination: req.body.destination,
+	age: req.body.age,
     gender: req.body.gender,
     primaryLanguage: req.body.primaryLanguage, 
     secondaryLanguage: req.body.secondaryLanguage,
-    activities: req.body.activities,
-    destination: req.body.destination,
+	activities: req.body.activities,
+	bunnyPhoto: req.body.bunnyPhoto
   })
 // Passing the whole object/results an
     .then(function (bunniesDb) {
-      console.log("Bunnies Database is Running" + bunniesDb);
       res.redirect("/results")
     });
     
@@ -46,7 +45,6 @@ router.post("/results/new", function (req, res) {
 router.get("/results", function(req, res) {
   db.Bunny.findAll()
   .then(function (bunnies) {
-    console.log("Coming from the bunnies controller.js file get results: " + bunnies);
     var bunniesObject = {
       bunniesAll: bunnies
     };
