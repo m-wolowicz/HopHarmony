@@ -157,13 +157,13 @@ BEGIN RESULTS PAGE CSS
 /* BACKGROUND VIDEO + OVERLAY + TEXT */
 #videoOverlayJumbo {
 	background: #ffffff;
+	position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     opacity: 0.75;
-    position: fixed;
-    z-index: -50;
+    z-index: -99;
     text-align: center;
     margin: 0%;
     height: 100%;
@@ -177,22 +177,27 @@ BEGIN RESULTS PAGE CSS
         bottom: 0;
         left: 0;
         overflow: hidden;
-        z-index: -100;
+        z-index: -102;
         min-height:100%;
 }
 
 /* JUMBOTRON */
 #jumbo {
 	position: relative;
-	background-color: white;
-	/* background-image: url("/assets/img/backgroundImg01.jpg"); */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 	background-size: cover;
-	background-blend-mode: normal;
 	border: none;
 	border-radius: 0;
 	font-size: 20px;
 	margin-bottom: 0px;
-	z-index:-101;
+	z-index:0;
+}
+
+#jumboContainer {
+	z-index: -10;
 }
 
 #hopLogo {
@@ -219,6 +224,7 @@ BEGIN RESULTS PAGE CSS
 	padding-right: 35px;
 	margin-top: 10px;
 	margin-bottom: 0;
+	z-index: 1000;
 }
 
 #jumboButtonImg {
@@ -229,6 +235,7 @@ BEGIN RESULTS PAGE CSS
 
 /* BUNNIES RESULTS */
 #bunniesFluidContainer {
+	position: absolute;
 	background-color: #001a27;
 	padding-top: 80px;
 	padding-bottom: 80px;
