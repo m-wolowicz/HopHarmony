@@ -56,8 +56,8 @@
 							to="0 -2"
 							dur="0.25s"
 							repeatCount="indefinite" 
-							begin="0s; 5s; 10s; 15s;"
-							end="0.5s; 5.5s; 10.5s; 15.5s;"
+							begin="0s; 5s; 10s; 15s; 20s; 25s; 30s; 35s; 40s; 45s; 50s; 55s;"
+							end="0.5s; 5.5s; 10.5s; 15.5s; 20.5s; 25.5s; 30.5s; 35.5s; 40.5s; 45.5s; 50.5s; 55.5s;"
 							fill="freeze" 
 							restart="whenNotActive"
            />

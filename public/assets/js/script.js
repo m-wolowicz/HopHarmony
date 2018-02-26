@@ -16,8 +16,6 @@
 			//This prevents the page from reloading
 				// event.preventDefault();
 
-			//Logging for Debugging and Testing
-				console.log("\nThe FEED THE BUNNY BUTTON was clicked\n");
 			
 			// =================================================
 			// USER INPUT DATA IS STORED HERE IN THESE VARIABLES:
@@ -49,13 +47,13 @@
 
 				// The whole new person as an object:
 				var newBunnyFriend = {	
-					name: newBunnyName.toString(),
-					location: newBunnyLocation.toString(),
+					bunnyName: newBunnyName.toString(),
+					destination: newBunnyLocation.toString(),
 					age: newBunnyAge.toString(),
 					gender: newBunnyGender.toString(),
 					primaryLanguage: newBunnyPrimLang.toString(),
 					secondaryLanguage: newBunnySecLang.toString(),
-					fun: newBunnyFun.toString()
+					activities: newBunnyFun.toString(),
 				};
 					//Logging for Debugging and Testing
 					console.log("Your new Bunny Friend as an object is: " + JSON.stringify(newBunnyFriend, null, " "));
