@@ -32,27 +32,27 @@ router.get("/index", function(req, res) {
 // ==================================================
 	router.post("/results/new", upload.single('bunnyPhoto'), function (req, res, next) {
 
-		//Trimming the Location Information:
-		var locationRaw = req.body.destination;
+		// //Trimming the Location Information:
+		// var locationRaw = req.body.destination;
 
-			//splitting raw city information into an array of strings
-			var locationArr = locationRaw.split(',');
+		// 	//splitting raw city information into an array of strings
+		// 	var locationArr = locationRaw.split(',');
 
-			//Generating new Location if Location is more than 3 strings
-			if (locationArr.length < 3) {
+		// 	//Generating new Location if Location is more than 3 strings
+		// 	if (locationArr.length < 2) {
 
-				alert("Please enter a valid location");
+		// 		alert("Please enter a valid location");
 
-			} else {
-				//New Location Data:
-				var stIndex = locationArr.length - 2;
-				var ctIndex = locationArr.length - 3;
-				var city = locationArr[ctIndex];
-				var st = locationArr[stIndex];
-				var country = locationArr.slice(-1)[0];
-			}
+		// 	} else {
+		// 		//New Location Data:
+		// 		var stIndex = locationArr.length - 2;
+		// 		var ctIndex = locationArr.length - 3;
+		// 		var city = locationArr[ctIndex];
+		// 		var st = locationArr[stIndex];
+		// 		var country = locationArr.slice(-1)[0];
+		// 	}
 
-			var editedLocation = city + ", " + country;
+		// 	var editedLocation = city + ", " + country;
 		
 		//Getting the image uploaded:
 		var uploadedPhotoName = req.file.filename;
@@ -61,7 +61,7 @@ router.get("/index", function(req, res) {
 		//Creating a New Bunny In the Database:
 		db.Bunny.create({
 			bunnyName: req.body.bunnyName,
-			destination: editedLocation,
+			destination: req.body.destination,
 			age: req.body.age,
 			gender: req.body.gender,
 			primaryLanguage: req.body.primaryLanguage, 
