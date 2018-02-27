@@ -24,8 +24,10 @@
   "homepage": "https://github.com/m-wolowicz/HopHarmony#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "busboy": "^0.2.14",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
+    "multer": "^1.3.0",
     "mysql2": "^1.5.2",
     "sequelize": "^4.33.4"
   },
