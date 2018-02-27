@@ -96,6 +96,7 @@
 	#formColumn input, select, option {
 		font-weight: 300;
 		font-size: 12px;
+		height: 40px !important;
 	}
 
 	#formColumn button {
@@ -112,7 +113,7 @@
 	}
 
 	#formColumn button img {
-		height: 26px;
+		height: 20px;
 		position: absolute;
 	}
 
@@ -141,8 +142,11 @@
 		margin-left: 20px;
 	}
 
+	.photoButton input[type=file i]{
+		line-height: 40px;
+	}
 
-
+	
 
 /* 
 ======================
@@ -150,16 +154,50 @@ BEGIN RESULTS PAGE CSS
 ======================
 */
 
+/* BACKGROUND VIDEO + OVERLAY + TEXT */
+#videoOverlayJumbo {
+	background: #ffffff;
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75;
+    z-index: -99;
+    text-align: center;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+#backgroundVideoJumbo {
+	position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -102;
+        min-height:100%;
+}
+
 /* JUMBOTRON */
 #jumbo {
-	background-color: white;
-	background-image: url("/assets/img/backgroundImg01.jpg");
+	position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 	background-size: cover;
-	background-blend-mode: normal;
 	border: none;
 	border-radius: 0;
 	font-size: 20px;
 	margin-bottom: 0px;
+	z-index:0;
+}
+
+#jumboContainer {
+	z-index: -10;
 }
 
 #hopLogo {
@@ -186,6 +224,7 @@ BEGIN RESULTS PAGE CSS
 	padding-right: 35px;
 	margin-top: 10px;
 	margin-bottom: 0;
+	z-index: 1000;
 }
 
 #jumboButtonImg {
@@ -193,82 +232,11 @@ BEGIN RESULTS PAGE CSS
 	position: absolute;
 }
 
-/* BURROW RESULTS */
-#burrowsFluidContainer {
-	background-color: #001a27;
-	padding-top: 80px;
-	padding-bottom: 80px;
-}
-
-#burrowsInnerContainer h3 {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 50px;
-	font-weight: 300;
-	letter-spacing: 4px;
-	color: #f3e9de;
-	margin-bottom: 40px;
-}
-
-#burrowsInnerContainer hr {
-	background-color: #62bb46;
-	align-self: center;
-	max-width: 20%;
-	margin-bottom: 50px;
-}
-
-#burrowsInnerContainer .card {
-	margin-bottom: 40px;
-	border: none;
-	border-radius: 0px;
-	font-size: 14px;	
-}
-
-#burrowsInnerContainer .card .card-img-top {
-	border: none;
-	border-radius: 0px;
-	height: 200px;
-	object-fit: cover;
-}
-
-#burrowsInnerContainer h5 {
-	font-size: 18px;
-	background-color: #62bb46;
-	color: white;
-	margin-left: -1.25rem;
-	margin-right: -1.25rem;
-	margin-top: -1.25rem;
-	margin-bottom: 1rem;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	border: none;	
-}
-
-#burrowsInnerContainer .card .burResSpan {
-	margin-left: 5px;
-	font-weight: 100;
-	color: #99928a;
-}
-
-.selectBtns {
-	font-weight: 100;
-	font-size: 13px;
-	letter-spacing: 2px;
-	background-color: #62bb46;
-	border: none;
-	border-radius: 0;
-	padding: 8px 30px;
-	margin-top: 0.75rem;
-	margin-bottom: 10px;
-}
-
-
 
 /* BUNNIES RESULTS */
 #bunniesFluidContainer {
-	background-color: #f3e9de;
+	position: absolute;
+	background-color: #001a27;
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
@@ -279,14 +247,14 @@ BEGIN RESULTS PAGE CSS
 	font-size: 50px;
 	font-weight: 300;
 	letter-spacing: 4px;
-	color: #001a27;
+	color: #f3e9de;
 	margin-bottom: 40px;
 }
 
 #bunniesInnerContainer hr {
 	background-color: #f99d2a;
 	align-self: center;
-	max-width: 20%;
+	max-width: 100px;
 	margin-bottom: 50px;
 }
 
@@ -298,7 +266,7 @@ BEGIN RESULTS PAGE CSS
 }
 
 .bunHeaders {
-	background-color: #f3e9de;
+	background-color: #001a27;
 	height: 120px;
 	text-align: center;
 	padding: 0;
@@ -306,6 +274,7 @@ BEGIN RESULTS PAGE CSS
 }
 
 .bunHeaders img {
+	background-color: #f99d2a;
 	border-radius: 50%;
 	border: 5px solid #f99d2a;
 	max-width: 160px;
@@ -327,7 +296,7 @@ BEGIN RESULTS PAGE CSS
 
 .BunText {
 	font-size: 14px;
-	margin-bottom: 0px;
+	margin-bottom: 25px;
 }
 
 .bunResSpan {

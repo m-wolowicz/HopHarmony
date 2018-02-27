@@ -52,6 +52,3 @@ var PORT = process.env.PORT || 8080;
 			console.log("\n==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
 		});
 	});
-
-
-console.log("\nFrom server.js file: module.exports=\n" + module.exports);

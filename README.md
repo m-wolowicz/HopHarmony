@@ -25,6 +25,10 @@ Weeks 18-20 Group Project 2 (Data Project)
 
 ![alt text](https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/HopHarmonyRGB.png "HopHarmony Logo")
 
+## Live App:
+
+[Check out the live app here](https://hopharmony.herokuapp.com/index)
+
 ## Team Members:
 
 David A. Krane (@dkfrito)

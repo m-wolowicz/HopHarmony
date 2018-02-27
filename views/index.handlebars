@@ -15,7 +15,7 @@
 			<div class="col-sm-12 col-md-6 col-lg-6" id="logoColumn">
 				<img src="assets/img/HopHarmonyAnimated.svg" class="img-fluid" alt="Responsive image">
 				<hr>
-				<p>Join over 5,000,000+ bunnies around the world, who have already signed up with HopHarmony to meet travelers visiting their local areas and offer to show them around, and hang out while they are in town.</p>
+				<p>Join over 5,000,000+ bunnies around the world, who have already signed up with HopHarmony to meet travelers visiting their local areas, and offer to show them around and hang out while they are in town.</p>
 			</div>
 
 			<div class="col-sm-12 col-md-1 col-lg-1" id="emptyColumnDiv"></div>
@@ -23,22 +23,17 @@
 			<!-- This is where the form goes -->
 			<div class="col-sm-12 col-md-5 col-lg-5" id="formColumn">
 				<h1>Become A Bunny</h1>
-				<p>Fill out the form to get become a part of HopHarmony's available bunnies.</p>
+				<p>Fill out the form below to get become a part of HopHarmony's colony of friendly bunnies.</p>
 
 				{{!-- We use the action to send the data on the form to controller --}}
-				<form class="bunnyForm" id="form" method="POST" action="/results/new"> 
+				<form class="bunnyForm" id="form" method="POST" action="/results/new" enctype="multipart/form-data"> 
 					
 
 					<!-- NAME -->
 					<div class="form-group row">
 						<label class="col-4 col-form-label" for="bunnyName">Name:</label> 
 						<div class="col-8">
-							<input id="bunnyName" name="bunnyName" placeholder="Name" type="text" required="required" class="form-control here" autocomplete="name" pattern="[a-zA-Z][a-zA-Z ]+">
-							<input type="file" name="pic" id="bunnyPhoto" accept="image/*">
-							<a>Upload your foto</a>
-					
-						
-						
+							<input id="bunnyName" name="bunnyName" placeholder="Your Full Name" type="text" required="required" class="form-control here" autocomplete="name" pattern="[a-zA-Z][a-zA-Z ]+">
 						</div>
 					</div>
 
@@ -130,6 +125,15 @@
 								<option value="Clubs & Bars">Clubs & Bars</option>
 								<option value="Hibernating">Hibernating</option>
 							</select>
+						</div>
+					</div>
+
+					<!-- PHOTO -->
+					
+					<div class="form-group row">
+						<label class="col-4 col-form-label" for="bunnyPhoto">Upload Photo:</label> 
+						<div class="col-8 photoButton">
+							<input type="file" class="form-control-file" id="bunnyPhoto" name="bunnyPhoto" required="required">
 						</div>
 					</div>
 
