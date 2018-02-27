@@ -32,13 +32,36 @@ router.get("/index", function(req, res) {
 // ==================================================
 	router.post("/results/new", upload.single('bunnyPhoto'), function (req, res, next) {
 
+		//Trimming the Location Information:
+		var locationRaw = req.body.destination;
+
+			//splitting raw city information into an array of strings
+			var locationArr = locationRaw.split(',');
+
+			//Generating new Location if Location is more than 3 strings
+			if (locationArr.length < 3) {
+
+				alert("Please enter a valid location");
+
+			} else {
+				//New Location Data:
+				var stIndex = locationArr.length - 2;
+				var ctIndex = locationArr.length - 3;
+				var city = locationArr[ctIndex];
+				var st = locationArr[stIndex];
+				var country = locationArr.slice(-1)[0];
+			}
+
+			var editedLocation = city + ", " + country;
+		
+		//Getting the image uploaded:
 		var uploadedPhotoName = req.file.filename;
 		console.log("The new file name uploaded is: " + uploadedPhotoName);
 
 		//Creating a New Bunny In the Database:
 		db.Bunny.create({
 			bunnyName: req.body.bunnyName,
-			destination: req.body.destination,
+			destination: editedLocation,
 			age: req.body.age,
 			gender: req.body.gender,
 			primaryLanguage: req.body.primaryLanguage, 

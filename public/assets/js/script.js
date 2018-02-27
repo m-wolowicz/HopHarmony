@@ -34,17 +34,6 @@
 				var newBunnySecLang = data[5].value;
 				var newBunnyFun = data[6].value;
 
-					//Logging for Debugging and Testing
-					console.log(	"\n==== NEW BUNNY DATA ====" + 
-									"\nName: " + newBunnyName +
-									"\nLocation: " + newBunnyLocation +
-									"\nAge: " + newBunnyAge +
-									"\nGender: " + newBunnyGender +
-									"\nPrimary Language: " + newBunnyPrimLang +
-									"\nSecondary Language: " + newBunnySecLang +
-									"\nFun: " + newBunnyFun);
-
-
 				// The whole new person as an object:
 				var newBunnyFriend = {	
 					bunnyName: newBunnyName.toString(),
@@ -56,7 +45,7 @@
 					activities: newBunnyFun.toString(),
 				};
 					//Logging for Debugging and Testing
-					console.log("Your new Bunny Friend as an object is: " + JSON.stringify(newBunnyFriend, null, " "));
+					console.log("\nYour new Bunny Friend -AS IS- from the user's input displayed as an object is: \n" + JSON.stringify(newBunnyFriend, null, " "));
 
 		}); //End of submit function
 
