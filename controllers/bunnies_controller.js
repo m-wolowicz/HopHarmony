@@ -32,27 +32,64 @@ router.get("/index", function(req, res) {
 // ==================================================
 	router.post("/results/new", upload.single('bunnyPhoto'), function (req, res, next) {
 
-		// //Trimming the Location Information:
-		// var locationRaw = req.body.destination;
+		//Trimming the Location Information:
+		var locationRaw = req.body.destination;
+		console.log("locationRaw= " + locationRaw);
 
-		// 	//splitting raw city information into an array of strings
-		// 	var locationArr = locationRaw.split(',');
+		//splitting raw city information into an array of strings
+		var locationArr = [];
+		locationArr = locationRaw.split(',');
+		console.log("locationArr= " + locationArr);
 
-		// 	//Generating new Location if Location is more than 3 strings
-		// 	if (locationArr.length < 2) {
+		var length = locationArr.length;
+		console.log("length= " + length);
 
-		// 		alert("Please enter a valid location");
+		//Generating new Location if Location is more than 3 strings
+		switch(length) {
 
-		// 	} else {
-		// 		//New Location Data:
-		// 		var stIndex = locationArr.length - 2;
-		// 		var ctIndex = locationArr.length - 3;
-		// 		var city = locationArr[ctIndex];
-		// 		var st = locationArr[stIndex];
-		// 		var country = locationArr.slice(-1)[0];
-		// 	}
+			case length = 1:
+			console.log("The location array is: " + locationArr);
+				var country1 = locationArr[0];
+					console.log("The number of items in the locationArr.length is: " + locationArr.length);
+					console.log("The only item entered for location was: " + country1);
+				var editedLocation = country1;
+				break;
 
-		// 	var editedLocation = city + ", " + country;
+			case length = 2:
+			console.log("The location array is: " + locationArr);
+				var country2 = locationArr[1];
+				var city2 = locationArr[0];
+					console.log("The number of items in the locationArr.length is: " + locationArr.length);
+					console.log("The items entered for location were: " + city2 + " & " + country2);
+					console.log(typeof country2);
+					var editedLocation = city2 + ", " + country2;
+				break;
+
+			case length = 3:
+			var countryIndex3 = locationArr.length -1;
+			var cityIndex3 = locationArr.length - 3;
+			var country3 = locationArr[countryIndex3];
+			var city3 = locationArr[cityIndex3];
+				console.log("The number of items in the locationArr.length is: " + locationArr.length);
+				console.log("The items entered for location were: " + city3 + " & " + country3);
+				var editedLocation = city3 + ", " + country3;
+			break;
+
+			case length = 4:
+				console.log("The location array of more than 3 is: " + locationArr);
+
+				var countryIndex4 = locationArr.length -1;
+				var cityIndex4 = locationArr.length - 3;
+				var country4 = locationArr[countryIndex4]
+				var city4 = locationArr[cityIndex4];
+					console.log("The number of items in the locationArr.length is: " + locationArr.length);
+					console.log("The items entered for location were: " + city4 + " & " + country4);
+				var editedLocation = city4 + ", " + country4;
+				break;
+
+			default:
+			console.log("Enter a valid location");
+		}
 		
 		//Getting the image uploaded:
 		var uploadedPhotoName = req.file.filename;
@@ -61,7 +98,7 @@ router.get("/index", function(req, res) {
 		//Creating a New Bunny In the Database:
 		db.Bunny.create({
 			bunnyName: req.body.bunnyName,
-			destination: req.body.destination,
+			destination: editedLocation,
 			age: req.body.age,
 			gender: req.body.gender,
 			primaryLanguage: req.body.primaryLanguage, 

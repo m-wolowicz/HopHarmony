@@ -178,7 +178,7 @@ BEGIN RESULTS PAGE CSS
         left: 0;
         overflow: hidden;
         z-index: -102;
-        min-height:100%;
+        min-width:100%;
 }
 
 /* JUMBOTRON */
@@ -238,7 +238,7 @@ BEGIN RESULTS PAGE CSS
 	position: absolute;
 	background-color: #001a27;
 	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-bottom: 130px;
 }
 
 #bunniesInnerContainer h3 {
