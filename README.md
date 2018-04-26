@@ -45,6 +45,25 @@ The proposed outcome of this project is Traveler Matchup application that allows
   <img src="https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/projectSketch02.jpg" width="500px" alt="Sketch 02 - Home Page"/>
 </p>
 
+### Final Product Screen Shots:
+
+<p align="center">
+  <img src="https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/HopHarmonyApp.gif" alt="Hop Harmony App Animated Gif"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/HH_01.png" alt="Hop Harmony Home Page"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/HH_02.png" alt="Hop Harmony Home Page Form"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/HH_02.png" alt="Hop Harmony Results Page"/>
+</p>
+
+
 
 - - -
 
