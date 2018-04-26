@@ -1,29 +1,15 @@
 # HopHarmony
 
-Trilogy Education Services Full-Stack Web Developer Program
-
-University of Miami Cohort - 201710FSF3
-
-Weeks 18-20 Group Project 2 (Data Project)
-
-## Requirements:
-
-* Must use a Node and Express Web Server
-* Must be backed by a MySQL Database with a Sequelize ORM  
-* Must have both GET and POST routes for retrieving and adding new data
-* Must be deployed using Heroku (with Data)
-* Must utilize at least one new library, package, or technology that we haven’t discussed
-* Must have a polished frontend / UI 
-* Must have folder structure that meets MVC Paradigm
-* Must meet good quality coding standards (indentation, scoping, naming)
-
+HopHarmony is a Traveler Matchup application that allows users to be matched up with possible housing accomodations for their destination as well as matching them up with friendly locals who speak their language and are eager to hangout. HopHarmony is the ultimate getaway match maker. 
 
 ---
 
 
 # Project Title:
 
-![alt text](https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/HopHarmonyRGB.png "HopHarmony Logo")
+<p align="center">
+  <img src="https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/HopHarmonyAnimated.svg" width="700px" alt="HopHarmony Logo"/>
+</p>
 
 ## Live App:
 
@@ -47,30 +33,27 @@ The proposed outcome of this project is Traveler Matchup application that allows
 
 ### Sketch of Final Product:
 
-![alt text](https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/projectSketch01.jpg "Wireframe")
+<p align="center">
+  <img src="https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/projectSketch01.jpg" width="500px" alt="HopHarmony Wireframe"/>
+</p>
 
-![alt text](https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/projectSketch02.jpg "Sketch 01 - Landing Page")
+<p align="center">
+  <img src="https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/projectSketch02.jpg" width="500px" alt="Sketch 01 - Landing Page"/>
+</p>
 
-![alt text](https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/projectSketch02.jpg "Sketch 02 - Home Page")
-
-### Rough Breakdown of Tasks:
-
-- [x] Create presentation/documentation  (@m-wolowicz)
-- [x] Create HTML   (@m-wolowicz)
-- [x] Create CSS layout and syle  (@m-wolowicz)
-- [x] Create user input form, fields, and submit button (@m-wolowicz)
-
-- [x] Create algorithms that match up user's answers to database  (@reyhenry38)
-
-- [x] Create housing database (@dkfrito)
-- [x] Create local friends database (@dkfrito)
-
+<p align="center">
+  <img src="https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/projectSketch02.jpg" width="500px" alt="Sketch 02 - Home Page"/>
+</p>
 
 
 - - -
 
-
 #### Copyright
 
 David A. Krane (@dkfrito), Ejike Onwe (@reyhenry38), Melissa Wolowicz (@m-wolowicz)(C) 2018. All Rights Reserved.
+
+<p align="center">
+  <img src="https://github.com/m-wolowicz/HopHarmony/blob/master/public/assets/img/HopperBunny.png" width="50px" alt="Sketch 02 - Home Page"/>
+</p>
+
 
